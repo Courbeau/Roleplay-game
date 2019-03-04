@@ -1,2 +1,2 @@
 # Roleplay-game
-Python made game.
+Python 3 made game.
