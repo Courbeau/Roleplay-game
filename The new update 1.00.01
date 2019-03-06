@@ -1,0 +1,43 @@
+#making space in console
+for i in range(100):
+    print("")
+print("This is a fantasy game")
+#ch vars and gathering info
+mage = "mage"
+rogue = "rogue"
+warrior = "warrior"
+def ch_infofunc():
+    ch_name = raw_input("Tell me your name young champion: ")
+    ch_claas = raw_input("Choose your class between mage, rogue or warrior: ")
+    if ch_claas == ("mage"):
+        print("You chose mage!")
+    elif ch_claas == ("rogue"):
+        print("You chose rogue!")
+    elif ch_claas == ("warrior"):
+        print("You chose warrior")
+    else:
+        print("ERROR incorrect input plase input the right class")
+        return ch_infofunc()
+    ch_age = raw_input("Give me your age champion: ")
+    if ch_age.isdigit():
+        print("")
+    else:
+        print("ERROR incorrect input please give me a number as your age")
+        return ch_infofunc()
+ch_infofunc()
+#more space and some character info
+for i in range(3):
+    print("")
+print("Character starting info \n " + ch_name + "\n You're a " + ch_claas + "\n You're "+ ch_age + " year old")
+#more space and the first piece of story
+for i in range(3):
+    print("")
+def ch_introduce():
+    print("Now your own story will start")
+    if ch_claas == mage:
+        print("You are a really powerful mage and you just need to harnest those POWERS but now you can start your own journey")
+    elif ch_claas == rogue:
+        print("You're a very skillful rogue and you need to master the stelth and smuggling skills")
+    elif ch_claas == warrior:
+        print("You're a muscular warrior and you need to only master fencing and learn respect ")
+ch_introduce()
