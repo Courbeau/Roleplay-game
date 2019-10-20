@@ -1,0 +1,81 @@
+for i in range(100):
+    print("")
+print("This is a fantasy game")
+#ch vars and gathering info
+mage = "mage"
+rogue = "rogue"
+warrior = "warrior"
+
+ch_name = raw_input("Tell me your name young champion: ")
+ch_age = raw_input("Give me your age champion: ")
+if ch_age.isdigit():
+    True
+else:
+    print("ERROR incorrect input please give me a number as your age")
+    ch_age = raw_input("Give me your age champion: ")
+    if ch_age.isdigit():
+        True
+    else:
+        print("ERROR incorrect input please give me a number as your age")
+        ch_age = raw_input("Give me your age champion: ")
+        if ch_age.isdigit():
+            True
+        else:
+            print("ERROR incorrect input please give me a number as your age")
+            ch_age = raw_input("Give me your age champion: ")
+
+
+
+
+
+
+
+ch_claas = raw_input("Choose your class between mage, rogue or warrior: ")
+if ch_claas == ("mage"):
+    print("You chose mage!")
+elif ch_claas == ("rogue"):
+    print("You chose rogue!")
+elif ch_claas == ("warrior"):
+    print("You chose warrior")
+else:
+    print("ERROR incorrect input plase input the right class")
+    ch_claas = raw_input("Choose your class between mage, rogue or warrior: ")
+    if ch_claas == ("mage"):
+        print("You chose mage!")
+    elif ch_claas == ("rogue"):
+        print("You chose rogue!")
+    elif ch_claas == ("warrior"):
+        print("You chose warrior")
+    else:
+        print("ERROR incorrect input plase input the right class")
+        ch_claas = raw_input("Choose your class between mage, rogue or warrior: ")
+        if ch_claas == ("mage"):
+            print("You chose mage!")
+        elif ch_claas == ("rogue"):
+            print("You chose rogue!")
+        elif ch_claas == ("warrior"):
+            print("You chose warrior")
+        else:
+            print("ERROR incorrect input plase input the right class")
+            ch_claas = raw_input("Choose your class between mage, rogue or warrior: ")
+
+#more space and some character info(arg):
+def what_ch_looks_like():
+    for i in range(3):
+        print("")
+    print("Name: " + ch_name)
+    print("Age: " + ch_age)
+    print("Class: " + ch_claas)
+what_ch_looks_like()
+#more space and the first piece of story
+for i in range(3):
+    print("")
+def ch_introduce():
+    print("Now your own story will start")
+    if ch_claas == mage:
+        print("You are a really powerful mage and you just need to harnest those POWERS but now you can start your own journey")
+    elif ch_claas == rogue:
+        print("You're a very skillful rogue and you need to master the stelth and smuggling skills")
+    elif ch_claas == warrior:
+        print("You're a muscular warrior and you need to only master fencing and learn to lead ")
+ch_introduce()
